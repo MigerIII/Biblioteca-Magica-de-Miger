@@ -6,7 +6,7 @@ from django.contrib.staticfiles.urls import static
 
 
 urlpatterns = [
-    path('', views.inicio, name='inicio'),
+    path('', views.inicio, name='libros'),
     path('inicio', views.inicio, name='inicio'),
     path('nosotros', views.nosotros, name='nosotros'),
     path('libros',views.libros, name='libros'),
