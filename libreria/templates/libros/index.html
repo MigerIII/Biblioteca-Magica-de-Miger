@@ -23,11 +23,14 @@
                 </tr>
             </thead>
             <tbody>
+
+                {% for libro in libros %}
+
                 <tr>
-                    <td>1</td>
-                    <td>Aprende Django a las 5 am Con Mígersitox👓</td>
-                    <td>imagen.jpg</td>
-                    <td>libro perfecto para salvar tu ramo!</td>
+                    <td> {{libro.id}} </td>
+                    <td> {{libro.titulo}} </td>
+                    <td><img src="{{libro.imagen.url}}" height="100"></td>
+                    <td> {{libro.descripcion}} </td>
                     <td>
                         |
                         <a name="" id="" class="btn btn-warning"  href=" {% url 'editar' %} " role="button">🧐Editar📙</a>
@@ -36,6 +39,7 @@
                         |
                      </td>
                 </tr>
+                {% endfor %}
             </tbody>
         </table>
         
