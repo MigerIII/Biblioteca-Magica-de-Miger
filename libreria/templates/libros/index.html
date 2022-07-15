@@ -1,9 +1,40 @@
 {% extends 'base.html' %}
 
-{% block titulo %} Nosotros {% endblock %}
+{% block titulo %} lista de libros {% endblock %}
 
 {% block contenido %}
 
-Sección de Nosotros
+<div class="card">
+    <div class="card-header">
+        Listado de Libros encantados
+    </div>
+    <div class="card-body">
+        <h4 class="card-title">Title</h4>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Título</th>
+                    <th>Imagen</th>
+                    <th>Descripción</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Aprende Django a las 5 am Con Mígersitox</td>
+                    <td>imagen.jpg</td>
+                    <td>libro perfecto para salvar tu ramo!</td>
+                    <td>Editar | Borrar </td>
+                </tr>
+            </tbody>
+        </table>
+        
+
+
+    </div>
+</div>
 
 {% endblock %}

@@ -17,9 +17,9 @@
 <body>
     <nav class="navbar navbar-expand navbar-light bg-light">
         <div class="nav navbar-nav">
-            <a class="nav-item nav-link active" href="#">Inicio <span class="visually-hidden">(current)</span></a>
-            <a class="nav-item nav-link active" href="#">Libros <span class="visually-hidden">(current)</span></a>
-            <a class="nav-item nav-link active" href="#">Nosotros <span class="visually-hidden">(current)</span></a>
+            <a class="nav-item nav-link active" href=" {% url 'inicio' %} ">Inicio <span class="visually-hidden">(current)</span></a>
+            <a class="nav-item nav-link active" href="{% url 'libros' %}">Libros <span class="visually-hidden">(current)</span></a>
+            <a class="nav-item nav-link active" href="{% url 'nosotros' %}">Nosotros <span class="visually-hidden">(current)</span></a>
         </div>
     </nav>
 
