@@ -5,5 +5,5 @@ from .models import Libro
 class LibroForm(forms.ModelForm):
     class Meta:
         model = Libro
-        fields = '_all_'
+        fields = '__all__'
 
