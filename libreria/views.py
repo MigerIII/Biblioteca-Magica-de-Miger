@@ -1,5 +1,9 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from .models import Libro
+from.forms import LibroForm
+
+
 # Create your views here.
 def inicio(request):
     return render(request,'inicio.html')
@@ -9,10 +13,12 @@ def nosotros(request):
 
 
 def libros(request):
-    return render(request,'libros/index.html')
+    libros = Libro.objects.all()
+    return render(request, 'libros/index.html', {'libros':libros})
 
 def crear(request):
-    return render(request, 'libros/crear.html')
+    formulario = LibroForm(request.POST or None)
+    return render(request, 'libros/crear.html', {'formulario': formulario})
 
 def editar(request):
     return render(request, 'libros/editar.html')  
