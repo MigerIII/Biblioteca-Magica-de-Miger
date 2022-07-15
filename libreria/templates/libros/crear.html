@@ -4,6 +4,19 @@
 
 {% block contenido %}
 
-Formulario para agregar Nuevo libro
+<div class="card">
+    <div class="card-header">
+        Agregar libros a la biblioteca ✨
+    </div>
+    <div class="card-body">
+        <h4 class="card-title">Datos del libro</h4>
+
+        {% include 'libros/form.html' %}
+
+    </div>
+    <div class="card-footer text-muted">
+
+    </div>
+</div>
 
 {% endblock %}
